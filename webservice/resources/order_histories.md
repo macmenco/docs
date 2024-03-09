@@ -8,10 +8,10 @@ title: Order histories
 
 |        Name        |    Format    | Required | Description |
 | :----------------- | :----------- | :------: | :---------- |
+| **date_add**       | isDate       | ❌        |             |
 | **id_employee**    | isUnsignedId | ❌        | Employee ID |
 | **id_order_state** | isUnsignedId | ✔️       |             |
 | **id_order**       | isUnsignedId | ✔️       | Order ID    |
-| **date_add**       | isDate       | ❌        |             |
 
 
 ### Blank schema
@@ -19,11 +19,11 @@ title: Order histories
 ```xml
 <prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
   <order_history>
-    <id><![CDATA[]]></id>
+    <date_add><![CDATA[]]></date_add>
     <id_employee><![CDATA[]]></id_employee>
     <id_order_state><![CDATA[]]></id_order_state>
     <id_order><![CDATA[]]></id_order>
-    <date_add><![CDATA[]]></date_add>
+    <id><![CDATA[]]></id>
   </order_history>
 </prestashop>
 ```

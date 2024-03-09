@@ -17,8 +17,8 @@ title: Tags
 ```xml
 <prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
   <tag>
-    <id><![CDATA[]]></id>
     <id_lang><![CDATA[]]></id_lang>
+    <id><![CDATA[]]></id>
     <name><![CDATA[]]></name>
   </tag>
 </prestashop>

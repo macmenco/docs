@@ -8,12 +8,12 @@ title: Shops
 
 |       Name        |    Format     | Required | Max size |  Description  |
 | :---------------- | :------------ | :------: | -------: | :------------ |
-| **id_shop_group** |               | ✔️       |          | Shop group ID |
-| **id_category**   |               | ✔️       |          |               |
 | **active**        | isBool        | ❌        |          |               |
-| **deleted**       | isBool        | ❌        |          |               |
-| **name**          | isGenericName | ✔️       | 64       |               |
 | **color**         | isColor       | ❌        |          |               |
+| **deleted**       | isBool        | ❌        |          |               |
+| **id_category**   |               | ✔️       |          |               |
+| **id_shop_group** |               | ✔️       |          | Shop group ID |
+| **name**          | isGenericName | ✔️       | 64       |               |
 | **theme_name**    | isThemeName   | ❌        |          |               |
 
 
@@ -22,13 +22,13 @@ title: Shops
 ```xml
 <prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
   <shop>
-    <id><![CDATA[]]></id>
-    <id_shop_group><![CDATA[]]></id_shop_group>
-    <id_category><![CDATA[]]></id_category>
     <active><![CDATA[]]></active>
-    <deleted><![CDATA[]]></deleted>
-    <name><![CDATA[]]></name>
     <color><![CDATA[]]></color>
+    <deleted><![CDATA[]]></deleted>
+    <id_category><![CDATA[]]></id_category>
+    <id_shop_group><![CDATA[]]></id_shop_group>
+    <id><![CDATA[]]></id>
+    <name><![CDATA[]]></name>
     <theme_name><![CDATA[]]></theme_name>
   </shop>
 </prestashop>

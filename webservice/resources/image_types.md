@@ -8,14 +8,14 @@ title: Image types
 
 |       Name        |     Format      | Required | Max size | Description |
 | :---------------- | :-------------- | :------: | -------: | :---------- |
-| **name**          | isImageTypeName | ✔️       | 64       |             |
-| **width**         | isImageSize     | ✔️       |          |             |
-| **height**        | isImageSize     | ✔️       |          |             |
 | **categories**    | isBool          | ❌        |          |             |
-| **products**      | isBool          | ❌        |          |             |
+| **height**        | isImageSize     | ✔️       |          |             |
 | **manufacturers** | isBool          | ❌        |          |             |
-| **suppliers**     | isBool          | ❌        |          |             |
+| **name**          | isImageTypeName | ✔️       | 64       |             |
+| **products**      | isBool          | ❌        |          |             |
 | **stores**        | isBool          | ❌        |          |             |
+| **suppliers**     | isBool          | ❌        |          |             |
+| **width**         | isImageSize     | ✔️       |          |             |
 
 
 ### Blank schema
@@ -23,15 +23,15 @@ title: Image types
 ```xml
 <prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
   <image_type>
-    <id><![CDATA[]]></id>
-    <name><![CDATA[]]></name>
-    <width><![CDATA[]]></width>
-    <height><![CDATA[]]></height>
     <categories><![CDATA[]]></categories>
-    <products><![CDATA[]]></products>
+    <height><![CDATA[]]></height>
+    <id><![CDATA[]]></id>
     <manufacturers><![CDATA[]]></manufacturers>
-    <suppliers><![CDATA[]]></suppliers>
+    <name><![CDATA[]]></name>
+    <products><![CDATA[]]></products>
     <stores><![CDATA[]]></stores>
+    <suppliers><![CDATA[]]></suppliers>
+    <width><![CDATA[]]></width>
   </image_type>
 </prestashop>
 ```

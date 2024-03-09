@@ -8,12 +8,12 @@ title: Product options
 
 |        Name        |    Format     | Required | Max size | Description |
 | :----------------- | :------------ | :------: | -------: | :---------- |
-| **is_color_group** | isBool        | ❌        |          |             |
-| **group_type**     |               | ✔️       |          |             |
-| **position**       | isInt         | ❌        |          |             |
-| **name**           | isGenericName | ✔️       | 128      |             |
-| **public_name**    | isGenericName | ✔️       | 64       |             |
 | **associations**   |               | ❌        |          |             |
+| **group_type**     |               | ✔️       |          |             |
+| **is_color_group** | isBool        | ❌        |          |             |
+| **name**           | isGenericName | ✔️       | 128      |             |
+| **position**       | isInt         | ❌        |          |             |
+| **public_name**    | isGenericName | ✔️       | 64       |             |
 
 
 ### Blank schema
@@ -21,9 +21,9 @@ title: Product options
 ```xml
 <prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
   <product_option>
+    <group_type><![CDATA[]]></group_type>
     <id><![CDATA[]]></id>
     <is_color_group><![CDATA[]]></is_color_group>
-    <group_type><![CDATA[]]></group_type>
     <position><![CDATA[]]></position>
     <name>
       <language id="1"><![CDATA[]]></language>

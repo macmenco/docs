@@ -8,76 +8,76 @@ title: Products
 
 |             Name              |       Format        | Required | Writable | Max size | Not filterable |    Description     |
 | :---------------------------- | :------------------ | :------: | :------: | -------: | :------------- | :----------------- |
-| **id_manufacturer**           | isUnsignedId        | ❌        | ✔️       |          |                | Manufacturer ID    |
-| **id_supplier**               | isUnsignedId        | ❌        | ✔️       |          |                | Supplier ID        |
-| **id_category_default**       | isUnsignedId        | ❌        | ✔️       |          |                |                    |
-| **new**                       |                     | ❌        | ✔️       |          |                |                    |
-| **cache_default_attribute**   |                     | ❌        | ✔️       |          |                |                    |
-| **id_default_image**          |                     | ❌        | ✔️       |          | true           |                    |
-| **id_default_combination**    |                     | ❌        | ✔️       |          | true           |                    |
-| **id_tax_rules_group**        | isUnsignedId        | ❌        | ✔️       |          |                | Tax rules group ID |
-| **position_in_category**      |                     | ❌        | ✔️       |          | true           |                    |
-| **manufacturer_name**         |                     | ❌        | ❌        |          | true           |                    |
-| **quantity**                  |                     | ❌        | ❌        |          | true           |                    |
-| **type**                      |                     | ❌        | ✔️       |          | true           |                    |
-| **id_shop_default**           | isUnsignedId        | ❌        | ✔️       |          |                | Default shop ID    |
-| **reference**                 | isReference         | ❌        | ✔️       | 64       |                |                    |
-| **supplier_reference**        | isReference         | ❌        | ✔️       | 64       |                |                    |
-| **location**                  | isString            | ❌        | ✔️       | 255      |                |                    |
-| **width**                     | isUnsignedFloat     | ❌        | ✔️       |          |                |                    |
-| **height**                    | isUnsignedFloat     | ❌        | ✔️       |          |                |                    |
-| **depth**                     | isUnsignedFloat     | ❌        | ✔️       |          |                |                    |
-| **weight**                    | isUnsignedFloat     | ❌        | ✔️       |          |                |                    |
-| **quantity_discount**         | isBool              | ❌        | ✔️       |          |                |                    |
-| **ean13**                     | isEan13             | ❌        | ✔️       | 13       |                |                    |
-| **isbn**                      | isIsbn              | ❌        | ✔️       | 32       |                |                    |
-| **upc**                       | isUpc               | ❌        | ✔️       | 12       |                |                    |
-| **mpn**                       | isMpn               | ❌        | ✔️       | 40       |                |                    |
-| **cache_is_pack**             | isBool              | ❌        | ✔️       |          |                |                    |
-| **cache_has_attachments**     | isBool              | ❌        | ✔️       |          |                |                    |
-| **is_virtual**                | isBool              | ❌        | ✔️       |          |                |                    |
-| **state**                     | isUnsignedId        | ❌        | ✔️       |          |                |                    |
-| **additional_delivery_times** | isUnsignedId        | ❌        | ✔️       |          |                |                    |
-| **delivery_in_stock**         | isGenericName       | ❌        | ✔️       | 255      |                |                    |
-| **delivery_out_stock**        | isGenericName       | ❌        | ✔️       | 255      |                |                    |
-| **on_sale**                   | isBool              | ❌        | ✔️       |          |                |                    |
-| **online_only**               | isBool              | ❌        | ✔️       |          |                |                    |
-| **ecotax**                    | isPrice             | ❌        | ✔️       |          |                |                    |
-| **minimal_quantity**          | isUnsignedInt       | ❌        | ✔️       |          |                |                    |
-| **low_stock_threshold**       | isInt               | ❌        | ✔️       |          |                |                    |
-| **low_stock_alert**           | isBool              | ❌        | ✔️       |          |                |                    |
-| **price**                     | isPrice             | ✔️       | ✔️       |          |                |                    |
-| **wholesale_price**           | isPrice             | ❌        | ✔️       |          |                |                    |
-| **unity**                     | isString            | ❌        | ✔️       |          |                |                    |
-| **unit_price_ratio**          |                     | ❌        | ✔️       |          |                |                    |
-| **additional_shipping_cost**  | isPrice             | ❌        | ✔️       |          |                |                    |
-| **customizable**              | isUnsignedInt       | ❌        | ✔️       |          |                |                    |
-| **text_fields**               | isUnsignedInt       | ❌        | ✔️       |          |                |                    |
-| **uploadable_files**          | isUnsignedInt       | ❌        | ✔️       |          |                |                    |
 | **active**                    | isBool              | ❌        | ✔️       |          |                |                    |
-| **redirect_type**             | isString            | ❌        | ✔️       |          |                |                    |
-| **id_type_redirected**        | isUnsignedId        | ❌        | ✔️       |          |                |                    |
-| **available_for_order**       | isBool              | ❌        | ✔️       |          |                |                    |
-| **available_date**            | isDateFormat        | ❌        | ✔️       |          |                |                    |
-| **show_condition**            | isBool              | ❌        | ✔️       |          |                |                    |
-| **condition**                 | isGenericName       | ❌        | ✔️       |          |                |                    |
-| **show_price**                | isBool              | ❌        | ✔️       |          |                |                    |
-| **indexed**                   | isBool              | ❌        | ✔️       |          |                |                    |
-| **visibility**                | isProductVisibility | ❌        | ✔️       |          |                |                    |
+| **additional_delivery_times** | isUnsignedId        | ❌        | ✔️       |          |                |                    |
+| **additional_shipping_cost**  | isPrice             | ❌        | ✔️       |          |                |                    |
 | **advanced_stock_management** | isBool              | ❌        | ✔️       |          |                |                    |
+| **associations**              |                     | ❌        | ✔️       |          |                |                    |
+| **available_date**            | isDateFormat        | ❌        | ✔️       |          |                |                    |
+| **available_for_order**       | isBool              | ❌        | ✔️       |          |                |                    |
+| **available_later**           | IsGenericName       | ❌        | ✔️       | 255      |                |                    |
+| **available_now**             | isGenericName       | ❌        | ✔️       | 255      |                |                    |
+| **cache_default_attribute**   |                     | ❌        | ✔️       |          |                |                    |
+| **cache_has_attachments**     | isBool              | ❌        | ✔️       |          |                |                    |
+| **cache_is_pack**             | isBool              | ❌        | ✔️       |          |                |                    |
+| **condition**                 | isGenericName       | ❌        | ✔️       |          |                |                    |
+| **customizable**              | isUnsignedInt       | ❌        | ✔️       |          |                |                    |
 | **date_add**                  | isDate              | ❌        | ✔️       |          |                |                    |
 | **date_upd**                  | isDate              | ❌        | ✔️       |          |                |                    |
-| **pack_stock_type**           | isUnsignedInt       | ❌        | ✔️       |          |                |                    |
+| **delivery_in_stock**         | isGenericName       | ❌        | ✔️       | 255      |                |                    |
+| **delivery_out_stock**        | isGenericName       | ❌        | ✔️       | 255      |                |                    |
+| **depth**                     | isUnsignedFloat     | ❌        | ✔️       |          |                |                    |
+| **description_short**         | isCleanHtml         | ❌        | ✔️       |          |                |                    |
+| **description**               | isCleanHtml         | ❌        | ✔️       |          |                |                    |
+| **ean13**                     | isEan13             | ❌        | ✔️       | 13       |                |                    |
+| **ecotax**                    | isPrice             | ❌        | ✔️       |          |                |                    |
+| **height**                    | isUnsignedFloat     | ❌        | ✔️       |          |                |                    |
+| **id_category_default**       | isUnsignedId        | ❌        | ✔️       |          |                |                    |
+| **id_default_combination**    |                     | ❌        | ✔️       |          | true           |                    |
+| **id_default_image**          |                     | ❌        | ✔️       |          | true           |                    |
+| **id_manufacturer**           | isUnsignedId        | ❌        | ✔️       |          |                | Manufacturer ID    |
+| **id_shop_default**           | isUnsignedId        | ❌        | ✔️       |          |                | Default shop ID    |
+| **id_supplier**               | isUnsignedId        | ❌        | ✔️       |          |                | Supplier ID        |
+| **id_tax_rules_group**        | isUnsignedId        | ❌        | ✔️       |          |                | Tax rules group ID |
+| **id_type_redirected**        | isUnsignedId        | ❌        | ✔️       |          |                |                    |
+| **indexed**                   | isBool              | ❌        | ✔️       |          |                |                    |
+| **is_virtual**                | isBool              | ❌        | ✔️       |          |                |                    |
+| **isbn**                      | isIsbn              | ❌        | ✔️       | 32       |                |                    |
+| **link_rewrite**              | isLinkRewrite       | ❌        | ✔️       | 128      |                |                    |
+| **location**                  | isString            | ❌        | ✔️       | 255      |                |                    |
+| **low_stock_alert**           | isBool              | ❌        | ✔️       |          |                |                    |
+| **low_stock_threshold**       | isInt               | ❌        | ✔️       |          |                |                    |
+| **manufacturer_name**         |                     | ❌        | ❌        |          | true           |                    |
 | **meta_description**          | isGenericName       | ❌        | ✔️       | 512      |                |                    |
 | **meta_keywords**             | isGenericName       | ❌        | ✔️       | 255      |                |                    |
 | **meta_title**                | isGenericName       | ❌        | ✔️       | 255      |                |                    |
-| **link_rewrite**              | isLinkRewrite       | ❌        | ✔️       | 128      |                |                    |
+| **minimal_quantity**          | isUnsignedInt       | ❌        | ✔️       |          |                |                    |
+| **mpn**                       | isMpn               | ❌        | ✔️       | 40       |                |                    |
 | **name**                      | isCatalogName       | ❌        | ✔️       | 128      |                |                    |
-| **description**               | isCleanHtml         | ❌        | ✔️       |          |                |                    |
-| **description_short**         | isCleanHtml         | ❌        | ✔️       |          |                |                    |
-| **available_now**             | isGenericName       | ❌        | ✔️       | 255      |                |                    |
-| **available_later**           | IsGenericName       | ❌        | ✔️       | 255      |                |                    |
-| **associations**              |                     | ❌        | ✔️       |          |                |                    |
+| **new**                       |                     | ❌        | ✔️       |          |                |                    |
+| **on_sale**                   | isBool              | ❌        | ✔️       |          |                |                    |
+| **online_only**               | isBool              | ❌        | ✔️       |          |                |                    |
+| **pack_stock_type**           | isUnsignedInt       | ❌        | ✔️       |          |                |                    |
+| **position_in_category**      |                     | ❌        | ✔️       |          | true           |                    |
+| **price**                     | isPrice             | ✔️       | ✔️       |          |                |                    |
+| **quantity_discount**         | isBool              | ❌        | ✔️       |          |                |                    |
+| **quantity**                  |                     | ❌        | ❌        |          | true           |                    |
+| **redirect_type**             | isString            | ❌        | ✔️       |          |                |                    |
+| **reference**                 | isReference         | ❌        | ✔️       | 64       |                |                    |
+| **show_condition**            | isBool              | ❌        | ✔️       |          |                |                    |
+| **show_price**                | isBool              | ❌        | ✔️       |          |                |                    |
+| **state**                     | isUnsignedId        | ❌        | ✔️       |          |                |                    |
+| **supplier_reference**        | isReference         | ❌        | ✔️       | 64       |                |                    |
+| **text_fields**               | isUnsignedInt       | ❌        | ✔️       |          |                |                    |
+| **type**                      |                     | ❌        | ✔️       |          | true           |                    |
+| **unit_price_ratio**          |                     | ❌        | ✔️       |          |                |                    |
+| **unity**                     | isString            | ❌        | ✔️       |          |                |                    |
+| **upc**                       | isUpc               | ❌        | ✔️       | 12       |                |                    |
+| **uploadable_files**          | isUnsignedInt       | ❌        | ✔️       |          |                |                    |
+| **visibility**                | isProductVisibility | ❌        | ✔️       |          |                |                    |
+| **weight**                    | isUnsignedFloat     | ❌        | ✔️       |          |                |                    |
+| **wholesale_price**           | isPrice             | ❌        | ✔️       |          |                |                    |
+| **width**                     | isUnsignedFloat     | ❌        | ✔️       |          |                |                    |
 
 
 ### Blank schema
@@ -85,35 +85,27 @@ title: Products
 ```xml
 <prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
   <product>
-    <id><![CDATA[]]></id>
-    <id_manufacturer><![CDATA[]]></id_manufacturer>
-    <id_supplier><![CDATA[]]></id_supplier>
-    <id_category_default><![CDATA[]]></id_category_default>
-    <new><![CDATA[]]></new>
-    <cache_default_attribute><![CDATA[]]></cache_default_attribute>
-    <id_default_image><![CDATA[]]></id_default_image>
-    <id_default_combination><![CDATA[]]></id_default_combination>
-    <id_tax_rules_group><![CDATA[]]></id_tax_rules_group>
-    <position_in_category><![CDATA[]]></position_in_category>
-    <type><![CDATA[]]></type>
-    <id_shop_default><![CDATA[]]></id_shop_default>
-    <reference><![CDATA[]]></reference>
-    <supplier_reference><![CDATA[]]></supplier_reference>
-    <location><![CDATA[]]></location>
-    <width><![CDATA[]]></width>
-    <height><![CDATA[]]></height>
-    <depth><![CDATA[]]></depth>
-    <weight><![CDATA[]]></weight>
-    <quantity_discount><![CDATA[]]></quantity_discount>
-    <ean13><![CDATA[]]></ean13>
-    <isbn><![CDATA[]]></isbn>
-    <upc><![CDATA[]]></upc>
-    <mpn><![CDATA[]]></mpn>
-    <cache_is_pack><![CDATA[]]></cache_is_pack>
-    <cache_has_attachments><![CDATA[]]></cache_has_attachments>
-    <is_virtual><![CDATA[]]></is_virtual>
-    <state><![CDATA[]]></state>
+    <active><![CDATA[]]></active>
     <additional_delivery_times><![CDATA[]]></additional_delivery_times>
+    <additional_shipping_cost><![CDATA[]]></additional_shipping_cost>
+    <advanced_stock_management><![CDATA[]]></advanced_stock_management>
+    <available_date><![CDATA[]]></available_date>
+    <available_for_order><![CDATA[]]></available_for_order>
+    <available_later>
+      <language id="1"><![CDATA[]]></language>
+      <language id="2"><![CDATA[]]></language>
+    </available_later>
+    <available_now>
+      <language id="1"><![CDATA[]]></language>
+      <language id="2"><![CDATA[]]></language>
+    </available_now>
+    <cache_default_attribute><![CDATA[]]></cache_default_attribute>
+    <cache_has_attachments><![CDATA[]]></cache_has_attachments>
+    <cache_is_pack><![CDATA[]]></cache_is_pack>
+    <condition><![CDATA[]]></condition>
+    <customizable><![CDATA[]]></customizable>
+    <date_add><![CDATA[]]></date_add>
+    <date_upd><![CDATA[]]></date_upd>
     <delivery_in_stock>
       <language id="1"><![CDATA[]]></language>
       <language id="2"><![CDATA[]]></language>
@@ -122,34 +114,37 @@ title: Products
       <language id="1"><![CDATA[]]></language>
       <language id="2"><![CDATA[]]></language>
     </delivery_out_stock>
-    <on_sale><![CDATA[]]></on_sale>
-    <online_only><![CDATA[]]></online_only>
+    <depth><![CDATA[]]></depth>
+    <description>
+      <language id="1"><![CDATA[]]></language>
+      <language id="2"><![CDATA[]]></language>
+    </description>
+    <description_short>
+      <language id="1"><![CDATA[]]></language>
+      <language id="2"><![CDATA[]]></language>
+    </description_short>
+    <ean13><![CDATA[]]></ean13>
     <ecotax><![CDATA[]]></ecotax>
-    <minimal_quantity><![CDATA[]]></minimal_quantity>
-    <low_stock_threshold><![CDATA[]]></low_stock_threshold>
-    <low_stock_alert><![CDATA[]]></low_stock_alert>
-    <price><![CDATA[]]></price>
-    <wholesale_price><![CDATA[]]></wholesale_price>
-    <unity><![CDATA[]]></unity>
-    <unit_price_ratio><![CDATA[]]></unit_price_ratio>
-    <additional_shipping_cost><![CDATA[]]></additional_shipping_cost>
-    <customizable><![CDATA[]]></customizable>
-    <text_fields><![CDATA[]]></text_fields>
-    <uploadable_files><![CDATA[]]></uploadable_files>
-    <active><![CDATA[]]></active>
-    <redirect_type><![CDATA[]]></redirect_type>
+    <height><![CDATA[]]></height>
+    <id_category_default><![CDATA[]]></id_category_default>
+    <id_default_combination><![CDATA[]]></id_default_combination>
+    <id_default_image><![CDATA[]]></id_default_image>
+    <id_manufacturer><![CDATA[]]></id_manufacturer>
+    <id_shop_default><![CDATA[]]></id_shop_default>
+    <id_supplier><![CDATA[]]></id_supplier>
+    <id_tax_rules_group><![CDATA[]]></id_tax_rules_group>
     <id_type_redirected><![CDATA[]]></id_type_redirected>
-    <available_for_order><![CDATA[]]></available_for_order>
-    <available_date><![CDATA[]]></available_date>
-    <show_condition><![CDATA[]]></show_condition>
-    <condition><![CDATA[]]></condition>
-    <show_price><![CDATA[]]></show_price>
+    <id><![CDATA[]]></id>
     <indexed><![CDATA[]]></indexed>
-    <visibility><![CDATA[]]></visibility>
-    <advanced_stock_management><![CDATA[]]></advanced_stock_management>
-    <date_add><![CDATA[]]></date_add>
-    <date_upd><![CDATA[]]></date_upd>
-    <pack_stock_type><![CDATA[]]></pack_stock_type>
+    <is_virtual><![CDATA[]]></is_virtual>
+    <isbn><![CDATA[]]></isbn>
+    <link_rewrite>
+      <language id="1"><![CDATA[]]></language>
+      <language id="2"><![CDATA[]]></language>
+    </link_rewrite>
+    <location><![CDATA[]]></location>
+    <low_stock_alert><![CDATA[]]></low_stock_alert>
+    <low_stock_threshold><![CDATA[]]></low_stock_threshold>
     <meta_description>
       <language id="1"><![CDATA[]]></language>
       <language id="2"><![CDATA[]]></language>
@@ -162,30 +157,35 @@ title: Products
       <language id="1"><![CDATA[]]></language>
       <language id="2"><![CDATA[]]></language>
     </meta_title>
-    <link_rewrite>
-      <language id="1"><![CDATA[]]></language>
-      <language id="2"><![CDATA[]]></language>
-    </link_rewrite>
+    <minimal_quantity><![CDATA[]]></minimal_quantity>
+    <mpn><![CDATA[]]></mpn>
     <name>
       <language id="1"><![CDATA[]]></language>
       <language id="2"><![CDATA[]]></language>
     </name>
-    <description>
-      <language id="1"><![CDATA[]]></language>
-      <language id="2"><![CDATA[]]></language>
-    </description>
-    <description_short>
-      <language id="1"><![CDATA[]]></language>
-      <language id="2"><![CDATA[]]></language>
-    </description_short>
-    <available_now>
-      <language id="1"><![CDATA[]]></language>
-      <language id="2"><![CDATA[]]></language>
-    </available_now>
-    <available_later>
-      <language id="1"><![CDATA[]]></language>
-      <language id="2"><![CDATA[]]></language>
-    </available_later>
+    <new><![CDATA[]]></new>
+    <on_sale><![CDATA[]]></on_sale>
+    <online_only><![CDATA[]]></online_only>
+    <pack_stock_type><![CDATA[]]></pack_stock_type>
+    <position_in_category><![CDATA[]]></position_in_category>
+    <price><![CDATA[]]></price>
+    <quantity_discount><![CDATA[]]></quantity_discount>
+    <redirect_type><![CDATA[]]></redirect_type>
+    <reference><![CDATA[]]></reference>
+    <show_condition><![CDATA[]]></show_condition>
+    <show_price><![CDATA[]]></show_price>
+    <state><![CDATA[]]></state>
+    <supplier_reference><![CDATA[]]></supplier_reference>
+    <text_fields><![CDATA[]]></text_fields>
+    <type><![CDATA[]]></type>
+    <unit_price_ratio><![CDATA[]]></unit_price_ratio>
+    <unity><![CDATA[]]></unity>
+    <upc><![CDATA[]]></upc>
+    <uploadable_files><![CDATA[]]></uploadable_files>
+    <visibility><![CDATA[]]></visibility>
+    <weight><![CDATA[]]></weight>
+    <wholesale_price><![CDATA[]]></wholesale_price>
+    <width><![CDATA[]]></width>
     <associations>
       <categories>
         <category>

@@ -8,8 +8,8 @@ title: Product feature values
 
 |      Name      |    Format     | Required | Max size | Description |
 | :------------- | :------------ | :------: | -------: | :---------- |
-| **id_feature** | isUnsignedId  | ✔️       |          |             |
 | **custom**     | isBool        | ❌        |          |             |
+| **id_feature** | isUnsignedId  | ✔️       |          |             |
 | **value**      | isGenericName | ✔️       | 255      |             |
 
 
@@ -18,9 +18,9 @@ title: Product feature values
 ```xml
 <prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
   <product_feature_value>
-    <id><![CDATA[]]></id>
-    <id_feature><![CDATA[]]></id_feature>
     <custom><![CDATA[]]></custom>
+    <id_feature><![CDATA[]]></id_feature>
+    <id><![CDATA[]]></id>
     <value>
       <language id="1"><![CDATA[]]></language>
       <language id="2"><![CDATA[]]></language>

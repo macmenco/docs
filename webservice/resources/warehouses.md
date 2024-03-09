@@ -8,15 +8,15 @@ title: Warehouses
 
 |        Name         |      Format       | Required | Writable | Max size | Not filterable | Description |
 | :------------------ | :---------------- | :------: | :------: | -------: | :------------- | :---------- |
-| **id_address**      | isUnsignedId      | ✔️       | ✔️       |          |                |             |
-| **id_employee**     | isUnsignedId      | ✔️       | ✔️       |          |                | Employee ID |
-| **id_currency**     | isUnsignedId      | ✔️       | ✔️       |          |                | Currency ID |
-| **valuation**       |                   | ❌        | ❌        |          | true           |             |
-| **deleted**         |                   | ❌        | ✔️       |          |                |             |
-| **reference**       | isString          | ✔️       | ✔️       | 64       |                |             |
-| **name**            | isString          | ✔️       | ✔️       | 45       |                |             |
-| **management_type** | isStockManagement | ✔️       | ✔️       |          |                |             |
 | **associations**    |                   | ❌        | ✔️       |          |                |             |
+| **deleted**         |                   | ❌        | ✔️       |          |                |             |
+| **id_address**      | isUnsignedId      | ✔️       | ✔️       |          |                |             |
+| **id_currency**     | isUnsignedId      | ✔️       | ✔️       |          |                | Currency ID |
+| **id_employee**     | isUnsignedId      | ✔️       | ✔️       |          |                | Employee ID |
+| **management_type** | isStockManagement | ✔️       | ✔️       |          |                |             |
+| **name**            | isString          | ✔️       | ✔️       | 45       |                |             |
+| **reference**       | isString          | ✔️       | ✔️       | 64       |                |             |
+| **valuation**       |                   | ❌        | ❌        |          | true           |             |
 
 
 ### Blank schema
@@ -24,14 +24,14 @@ title: Warehouses
 ```xml
 <prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
   <warehouse>
-    <id><![CDATA[]]></id>
-    <id_address><![CDATA[]]></id_address>
-    <id_employee><![CDATA[]]></id_employee>
-    <id_currency><![CDATA[]]></id_currency>
     <deleted><![CDATA[]]></deleted>
-    <reference><![CDATA[]]></reference>
-    <name><![CDATA[]]></name>
+    <id_address><![CDATA[]]></id_address>
+    <id_currency><![CDATA[]]></id_currency>
+    <id_employee><![CDATA[]]></id_employee>
+    <id><![CDATA[]]></id>
     <management_type><![CDATA[]]></management_type>
+    <name><![CDATA[]]></name>
+    <reference><![CDATA[]]></reference>
     <associations>
       <stocks>
         <stock>

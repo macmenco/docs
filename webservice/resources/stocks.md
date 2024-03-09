@@ -8,18 +8,18 @@ title: Stocks
 
 |           Name           |    Format     | Required | Writable | Not filterable |     Description      |
 | :----------------------- | :------------ | :------: | :------: | :------------- | :------------------- |
-| **id_warehouse**         | isUnsignedId  | ✔️       | ✔️       |                | Warehouse ID         |
-| **id_product**           | isUnsignedId  | ✔️       | ✔️       |                | Product ID           |
-| **id_product_attribute** | isUnsignedId  | ✔️       | ✔️       |                | Product attribute ID |
-| **real_quantity**        |               | ❌        | ❌        | true           |                      |
-| **reference**            | isReference   | ❌        | ✔️       |                |                      |
 | **ean13**                | isEan13       | ❌        | ✔️       |                |                      |
+| **id_product_attribute** | isUnsignedId  | ✔️       | ✔️       |                | Product attribute ID |
+| **id_product**           | isUnsignedId  | ✔️       | ✔️       |                | Product ID           |
+| **id_warehouse**         | isUnsignedId  | ✔️       | ✔️       |                | Warehouse ID         |
 | **isbn**                 | isIsbn        | ❌        | ✔️       |                |                      |
-| **upc**                  | isUpc         | ❌        | ✔️       |                |                      |
 | **mpn**                  | isMpn         | ❌        | ✔️       |                |                      |
 | **physical_quantity**    | isUnsignedInt | ✔️       | ✔️       |                |                      |
-| **usable_quantity**      | isInt         | ✔️       | ✔️       |                |                      |
 | **price_te**             | isPrice       | ✔️       | ✔️       |                |                      |
+| **real_quantity**        |               | ❌        | ❌        | true           |                      |
+| **reference**            | isReference   | ❌        | ✔️       |                |                      |
+| **upc**                  | isUpc         | ❌        | ✔️       |                |                      |
+| **usable_quantity**      | isInt         | ✔️       | ✔️       |                |                      |
 
 
 ### Blank schema
@@ -27,18 +27,18 @@ title: Stocks
 ```xml
 <prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
   <stock>
-    <id><![CDATA[]]></id>
-    <id_warehouse><![CDATA[]]></id_warehouse>
-    <id_product><![CDATA[]]></id_product>
-    <id_product_attribute><![CDATA[]]></id_product_attribute>
-    <reference><![CDATA[]]></reference>
     <ean13><![CDATA[]]></ean13>
+    <id_product_attribute><![CDATA[]]></id_product_attribute>
+    <id_product><![CDATA[]]></id_product>
+    <id_warehouse><![CDATA[]]></id_warehouse>
+    <id><![CDATA[]]></id>
     <isbn><![CDATA[]]></isbn>
-    <upc><![CDATA[]]></upc>
     <mpn><![CDATA[]]></mpn>
     <physical_quantity><![CDATA[]]></physical_quantity>
-    <usable_quantity><![CDATA[]]></usable_quantity>
     <price_te><![CDATA[]]></price_te>
+    <reference><![CDATA[]]></reference>
+    <upc><![CDATA[]]></upc>
+    <usable_quantity><![CDATA[]]></usable_quantity>
   </stock>
 </prestashop>
 ```

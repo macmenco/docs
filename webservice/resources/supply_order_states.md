@@ -8,13 +8,13 @@ title: Supply order states
 
 |        Name         |    Format     | Required | Max size | Description |
 | :------------------ | :------------ | :------: | -------: | :---------- |
+| **color**           | isColor       | ❌        |          |             |
 | **delivery_note**   | isBool        | ❌        |          |             |
 | **editable**        | isBool        | ❌        |          |             |
-| **receipt_state**   | isBool        | ❌        |          |             |
-| **pending_receipt** | isBool        | ❌        |          |             |
 | **enclosed**        | isBool        | ❌        |          |             |
-| **color**           | isColor       | ❌        |          |             |
 | **name**            | isGenericName | ✔️       | 128      |             |
+| **pending_receipt** | isBool        | ❌        |          |             |
+| **receipt_state**   | isBool        | ❌        |          |             |
 
 
 ### Blank schema
@@ -22,13 +22,13 @@ title: Supply order states
 ```xml
 <prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
   <supply_order_state>
-    <id><![CDATA[]]></id>
+    <color><![CDATA[]]></color>
     <delivery_note><![CDATA[]]></delivery_note>
     <editable><![CDATA[]]></editable>
-    <receipt_state><![CDATA[]]></receipt_state>
-    <pending_receipt><![CDATA[]]></pending_receipt>
     <enclosed><![CDATA[]]></enclosed>
-    <color><![CDATA[]]></color>
+    <id><![CDATA[]]></id>
+    <pending_receipt><![CDATA[]]></pending_receipt>
+    <receipt_state><![CDATA[]]></receipt_state>
     <name>
       <language id="1"><![CDATA[]]></language>
       <language id="2"><![CDATA[]]></language>

@@ -8,10 +8,10 @@ title: Product option values
 
 |          Name          |    Format     | Required | Max size | Description |
 | :--------------------- | :------------ | :------: | -------: | :---------- |
-| **id_attribute_group** | isUnsignedId  | ✔️       |          |             |
 | **color**              | isColor       | ❌        |          |             |
-| **position**           | isInt         | ❌        |          |             |
+| **id_attribute_group** | isUnsignedId  | ✔️       |          |             |
 | **name**               | isGenericName | ✔️       | 128      |             |
+| **position**           | isInt         | ❌        |          |             |
 
 
 ### Blank schema
@@ -19,9 +19,9 @@ title: Product option values
 ```xml
 <prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
   <product_option_value>
-    <id><![CDATA[]]></id>
-    <id_attribute_group><![CDATA[]]></id_attribute_group>
     <color><![CDATA[]]></color>
+    <id_attribute_group><![CDATA[]]></id_attribute_group>
+    <id><![CDATA[]]></id>
     <position><![CDATA[]]></position>
     <name>
       <language id="1"><![CDATA[]]></language>

@@ -9,16 +9,16 @@ title: Manufacturers
 |         Name          |    Format     | Required | Writable | Max size | Not filterable | Description |
 | :-------------------- | :------------ | :------: | :------: | -------: | :------------- | :---------- |
 | **active**            |               | ❌        | ✔️       |          |                |             |
-| **link_rewrite**      |               | ❌        | ❌        |          | true           |             |
-| **name**              | isCatalogName | ✔️       | ✔️       | 64       |                |             |
+| **associations**      |               | ❌        | ✔️       |          |                |             |
 | **date_add**          |               | ❌        | ✔️       |          |                |             |
 | **date_upd**          |               | ❌        | ✔️       |          |                |             |
 | **description**       | isCleanHtml   | ❌        | ✔️       |          |                |             |
-| **short_description** | isCleanHtml   | ❌        | ✔️       |          |                |             |
-| **meta_title**        | isGenericName | ❌        | ✔️       | 255      |                |             |
+| **link_rewrite**      |               | ❌        | ❌        |          | true           |             |
 | **meta_description**  | isGenericName | ❌        | ✔️       | 512      |                |             |
 | **meta_keywords**     | isGenericName | ❌        | ✔️       |          |                |             |
-| **associations**      |               | ❌        | ✔️       |          |                |             |
+| **meta_title**        | isGenericName | ❌        | ✔️       | 255      |                |             |
+| **name**              | isCatalogName | ✔️       | ✔️       | 64       |                |             |
+| **short_description** | isCleanHtml   | ❌        | ✔️       |          |                |             |
 
 
 ### Blank schema
@@ -26,11 +26,11 @@ title: Manufacturers
 ```xml
 <prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
   <manufacturer>
-    <id><![CDATA[]]></id>
     <active><![CDATA[]]></active>
-    <name><![CDATA[]]></name>
     <date_add><![CDATA[]]></date_add>
     <date_upd><![CDATA[]]></date_upd>
+    <id><![CDATA[]]></id>
+    <name><![CDATA[]]></name>
     <description>
       <language id="1"><![CDATA[]]></language>
       <language id="2"><![CDATA[]]></language>

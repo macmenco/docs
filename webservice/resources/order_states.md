@@ -8,21 +8,21 @@ title: Order states
 
 |       Name       |    Format     | Required | Max size | Description |
 | :--------------- | :------------ | :------: | -------: | :---------- |
-| **unremovable**  | isBool        | ❌        |          |             |
+| **color**        | isColor       | ❌        |          |             |
+| **deleted**      | isBool        | ❌        |          |             |
 | **delivery**     | isBool        | ❌        |          |             |
 | **hidden**       | isBool        | ❌        |          |             |
-| **send_email**   | isBool        | ❌        |          |             |
-| **module_name**  | isModuleName  | ❌        |          |             |
 | **invoice**      | isBool        | ❌        |          |             |
-| **color**        | isColor       | ❌        |          |             |
 | **logable**      | isBool        | ❌        |          |             |
-| **shipped**      | isBool        | ❌        |          |             |
+| **module_name**  | isModuleName  | ❌        |          |             |
+| **name**         | isGenericName | ✔️       | 64       |             |
 | **paid**         | isBool        | ❌        |          |             |
 | **pdf_delivery** | isBool        | ❌        |          |             |
 | **pdf_invoice**  | isBool        | ❌        |          |             |
-| **deleted**      | isBool        | ❌        |          |             |
-| **name**         | isGenericName | ✔️       | 64       |             |
+| **send_email**   | isBool        | ❌        |          |             |
+| **shipped**      | isBool        | ❌        |          |             |
 | **template**     | isTplName     | ❌        | 64       |             |
+| **unremovable**  | isBool        | ❌        |          |             |
 
 
 ### Blank schema
@@ -30,20 +30,20 @@ title: Order states
 ```xml
 <prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
   <order_state>
-    <id><![CDATA[]]></id>
-    <unremovable><![CDATA[]]></unremovable>
+    <color><![CDATA[]]></color>
+    <deleted><![CDATA[]]></deleted>
     <delivery><![CDATA[]]></delivery>
     <hidden><![CDATA[]]></hidden>
-    <send_email><![CDATA[]]></send_email>
-    <module_name><![CDATA[]]></module_name>
+    <id><![CDATA[]]></id>
     <invoice><![CDATA[]]></invoice>
-    <color><![CDATA[]]></color>
     <logable><![CDATA[]]></logable>
-    <shipped><![CDATA[]]></shipped>
+    <module_name><![CDATA[]]></module_name>
     <paid><![CDATA[]]></paid>
     <pdf_delivery><![CDATA[]]></pdf_delivery>
     <pdf_invoice><![CDATA[]]></pdf_invoice>
-    <deleted><![CDATA[]]></deleted>
+    <send_email><![CDATA[]]></send_email>
+    <shipped><![CDATA[]]></shipped>
+    <unremovable><![CDATA[]]></unremovable>
     <name>
       <language id="1"><![CDATA[]]></language>
       <language id="2"><![CDATA[]]></language>

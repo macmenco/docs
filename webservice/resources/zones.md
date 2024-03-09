@@ -8,8 +8,8 @@ title: Zones
 
 |    Name    |    Format     | Required | Max size | Description |
 | :--------- | :------------ | :------: | -------: | :---------- |
-| **name**   | isGenericName | ✔️       | 64       |             |
 | **active** | isBool        | ❌        |          |             |
+| **name**   | isGenericName | ✔️       | 64       |             |
 
 
 ### Blank schema
@@ -17,9 +17,9 @@ title: Zones
 ```xml
 <prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
   <zone>
+    <active><![CDATA[]]></active>
     <id><![CDATA[]]></id>
     <name><![CDATA[]]></name>
-    <active><![CDATA[]]></active>
   </zone>
 </prestashop>
 ```

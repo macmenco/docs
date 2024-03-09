@@ -8,12 +8,12 @@ title: Supply order histories
 
 |          Name          |    Format    | Required | Description |
 | :--------------------- | :----------- | :------: | :---------- |
-| **id_supply_order**    | isUnsignedId | ✔️       |             |
-| **id_employee**        | isUnsignedId | ✔️       | Employee ID |
-| **id_state**           | isUnsignedId | ✔️       | State ID    |
+| **date_add**           | isDate       | ✔️       |             |
 | **employee_firstname** | isName       | ❌        |             |
 | **employee_lastname**  | isName       | ❌        |             |
-| **date_add**           | isDate       | ✔️       |             |
+| **id_employee**        | isUnsignedId | ✔️       | Employee ID |
+| **id_state**           | isUnsignedId | ✔️       | State ID    |
+| **id_supply_order**    | isUnsignedId | ✔️       |             |
 
 
 ### Blank schema
@@ -21,13 +21,13 @@ title: Supply order histories
 ```xml
 <prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
   <supply_order_history>
-    <id><![CDATA[]]></id>
-    <id_supply_order><![CDATA[]]></id_supply_order>
-    <id_employee><![CDATA[]]></id_employee>
-    <id_state><![CDATA[]]></id_state>
+    <date_add><![CDATA[]]></date_add>
     <employee_firstname><![CDATA[]]></employee_firstname>
     <employee_lastname><![CDATA[]]></employee_lastname>
-    <date_add><![CDATA[]]></date_add>
+    <id_employee><![CDATA[]]></id_employee>
+    <id_state><![CDATA[]]></id_state>
+    <id_supply_order><![CDATA[]]></id_supply_order>
+    <id><![CDATA[]]></id>
   </supply_order_history>
 </prestashop>
 ```

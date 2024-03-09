@@ -8,14 +8,14 @@ title: Order carriers
 
 |            Name            |      Format      | Required |   Description    |
 | :------------------------- | :--------------- | :------: | :--------------- |
-| **id_order**               | isUnsignedId     | ✔️       | Order ID         |
+| **date_add**               | isDate           | ❌        |                  |
 | **id_carrier**             | isUnsignedId     | ✔️       | Carrier ID       |
 | **id_order_invoice**       | isUnsignedId     | ❌        | Order invoice ID |
-| **weight**                 | isFloat          | ❌        |                  |
+| **id_order**               | isUnsignedId     | ✔️       | Order ID         |
 | **shipping_cost_tax_excl** | isFloat          | ❌        |                  |
 | **shipping_cost_tax_incl** | isFloat          | ❌        |                  |
 | **tracking_number**        | isTrackingNumber | ❌        |                  |
-| **date_add**               | isDate           | ❌        |                  |
+| **weight**                 | isFloat          | ❌        |                  |
 
 
 ### Blank schema
@@ -23,15 +23,15 @@ title: Order carriers
 ```xml
 <prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
   <order_carrier>
-    <id><![CDATA[]]></id>
-    <id_order><![CDATA[]]></id_order>
+    <date_add><![CDATA[]]></date_add>
     <id_carrier><![CDATA[]]></id_carrier>
     <id_order_invoice><![CDATA[]]></id_order_invoice>
-    <weight><![CDATA[]]></weight>
+    <id_order><![CDATA[]]></id_order>
+    <id><![CDATA[]]></id>
     <shipping_cost_tax_excl><![CDATA[]]></shipping_cost_tax_excl>
     <shipping_cost_tax_incl><![CDATA[]]></shipping_cost_tax_incl>
     <tracking_number><![CDATA[]]></tracking_number>
-    <date_add><![CDATA[]]></date_add>
+    <weight><![CDATA[]]></weight>
   </order_carrier>
 </prestashop>
 ```

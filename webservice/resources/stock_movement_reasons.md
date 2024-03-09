@@ -8,11 +8,11 @@ title: Stock movement reasons
 
 |     Name     |    Format     | Required | Max size | Description |
 | :----------- | :------------ | :------: | -------: | :---------- |
-| **sign**     |               | ❌        |          |             |
-| **deleted**  |               | ❌        |          |             |
 | **date_add** | isDate        | ❌        |          |             |
 | **date_upd** | isDate        | ❌        |          |             |
+| **deleted**  |               | ❌        |          |             |
 | **name**     | isGenericName | ✔️       | 255      |             |
+| **sign**     |               | ❌        |          |             |
 
 
 ### Blank schema
@@ -20,11 +20,11 @@ title: Stock movement reasons
 ```xml
 <prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
   <stock_movement_reason>
-    <id><![CDATA[]]></id>
-    <sign><![CDATA[]]></sign>
-    <deleted><![CDATA[]]></deleted>
     <date_add><![CDATA[]]></date_add>
     <date_upd><![CDATA[]]></date_upd>
+    <deleted><![CDATA[]]></deleted>
+    <id><![CDATA[]]></id>
+    <sign><![CDATA[]]></sign>
     <name>
       <language id="1"><![CDATA[]]></language>
       <language id="2"><![CDATA[]]></language>

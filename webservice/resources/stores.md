@@ -8,23 +8,23 @@ title: Stores
 
 |      Name      |       Format       | Required | Max size | Description |
 | :------------- | :----------------- | :------: | -------: | :---------- |
-| **id_country** | isUnsignedId       | ✔️       |          | Country ID  |
-| **id_state**   | isNullOrUnsignedId | ❌        |          | State ID    |
-| **hours**      | isJson             | ❌        | 65000    |             |
-| **postcode**   |                    | ❌        | 12       |             |
-| **city**       | isCityName         | ✔️       | 64       |             |
-| **latitude**   | isCoordinate       | ❌        | 13       |             |
-| **longitude**  | isCoordinate       | ❌        | 13       |             |
-| **phone**      | isPhoneNumber      | ❌        | 16       |             |
-| **fax**        | isPhoneNumber      | ❌        | 16       |             |
-| **email**      | isEmail            | ❌        | 255      |             |
 | **active**     | isBool             | ✔️       |          |             |
-| **date_add**   | isDate             | ❌        |          |             |
-| **date_upd**   | isDate             | ❌        |          |             |
-| **name**       | isGenericName      | ✔️       | 255      |             |
 | **address1**   | isAddress          | ✔️       | 255      |             |
 | **address2**   | isAddress          | ❌        | 255      |             |
+| **city**       | isCityName         | ✔️       | 64       |             |
+| **date_add**   | isDate             | ❌        |          |             |
+| **date_upd**   | isDate             | ❌        |          |             |
+| **email**      | isEmail            | ❌        | 255      |             |
+| **fax**        | isPhoneNumber      | ❌        | 16       |             |
+| **hours**      | isJson             | ❌        | 65000    |             |
+| **id_country** | isUnsignedId       | ✔️       |          | Country ID  |
+| **id_state**   | isNullOrUnsignedId | ❌        |          | State ID    |
+| **latitude**   | isCoordinate       | ❌        | 13       |             |
+| **longitude**  | isCoordinate       | ❌        | 13       |             |
+| **name**       | isGenericName      | ✔️       | 255      |             |
 | **note**       | isCleanHtml        | ❌        | 65000    |             |
+| **phone**      | isPhoneNumber      | ❌        | 16       |             |
+| **postcode**   |                    | ❌        | 12       |             |
 
 
 ### Blank schema
@@ -32,23 +32,23 @@ title: Stores
 ```xml
 <prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
   <store>
-    <id><![CDATA[]]></id>
+    <active><![CDATA[]]></active>
+    <city><![CDATA[]]></city>
+    <date_add><![CDATA[]]></date_add>
+    <date_upd><![CDATA[]]></date_upd>
+    <email><![CDATA[]]></email>
+    <fax><![CDATA[]]></fax>
     <id_country><![CDATA[]]></id_country>
     <id_state><![CDATA[]]></id_state>
+    <id><![CDATA[]]></id>
+    <latitude><![CDATA[]]></latitude>
+    <longitude><![CDATA[]]></longitude>
+    <phone><![CDATA[]]></phone>
+    <postcode><![CDATA[]]></postcode>
     <hours>
       <language id="1"><![CDATA[]]></language>
       <language id="2"><![CDATA[]]></language>
     </hours>
-    <postcode><![CDATA[]]></postcode>
-    <city><![CDATA[]]></city>
-    <latitude><![CDATA[]]></latitude>
-    <longitude><![CDATA[]]></longitude>
-    <phone><![CDATA[]]></phone>
-    <fax><![CDATA[]]></fax>
-    <email><![CDATA[]]></email>
-    <active><![CDATA[]]></active>
-    <date_add><![CDATA[]]></date_add>
-    <date_upd><![CDATA[]]></date_upd>
     <name>
       <language id="1"><![CDATA[]]></language>
       <language id="2"><![CDATA[]]></language>

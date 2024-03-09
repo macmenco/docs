@@ -8,53 +8,53 @@ title: Order details
 
 |               Name                |    Format     | Required |     Description      |
 | :-------------------------------- | :------------ | :------: | :------------------- |
-| **id_order**                      | isUnsignedId  | ✔️       | Order ID             |
-| **product_id**                    | isUnsignedId  | ❌        | Product ID           |
-| **product_attribute_id**          | isUnsignedId  | ❌        | Product attribute ID |
-| **product_quantity_reinjected**   | isUnsignedInt | ❌        |                      |
-| **group_reduction**               | isFloat       | ❌        |                      |
+| **associations**                  |               | ❌        |                      |
 | **discount_quantity_applied**     | isInt         | ❌        |                      |
-| **download_hash**                 | isGenericName | ❌        |                      |
 | **download_deadline**             | isDateFormat  | ❌        |                      |
-| **id_order_invoice**              | isUnsignedId  | ❌        | Order invoice ID     |
-| **id_warehouse**                  | isUnsignedId  | ✔️       | Warehouse ID         |
-| **id_shop**                       | isUnsignedId  | ✔️       | Shop ID              |
-| **id_customization**              | isUnsignedId  | ❌        | Customization ID     |
-| **product_name**                  | isGenericName | ✔️       |                      |
-| **product_quantity**              | isInt         | ✔️       |                      |
-| **product_quantity_in_stock**     | isInt         | ❌        |                      |
-| **product_quantity_return**       | isUnsignedInt | ❌        |                      |
-| **product_quantity_refunded**     | isUnsignedInt | ❌        |                      |
-| **product_price**                 | isPrice       | ✔️       |                      |
-| **reduction_percent**             | isFloat       | ❌        |                      |
-| **reduction_amount**              | isPrice       | ❌        |                      |
-| **reduction_amount_tax_incl**     | isPrice       | ❌        |                      |
-| **reduction_amount_tax_excl**     | isPrice       | ❌        |                      |
-| **product_quantity_discount**     | isFloat       | ❌        |                      |
-| **product_ean13**                 | isEan13       | ❌        |                      |
-| **product_isbn**                  | isIsbn        | ❌        |                      |
-| **product_upc**                   | isUpc         | ❌        |                      |
-| **product_mpn**                   | isMpn         | ❌        |                      |
-| **product_reference**             | isReference   | ❌        |                      |
-| **product_supplier_reference**    | isReference   | ❌        |                      |
-| **product_weight**                | isFloat       | ❌        |                      |
-| **tax_computation_method**        | isUnsignedId  | ❌        |                      |
-| **id_tax_rules_group**            | isInt         | ❌        | Tax rules group ID   |
-| **ecotax**                        | isFloat       | ❌        |                      |
-| **ecotax_tax_rate**               | isFloat       | ❌        |                      |
+| **download_hash**                 | isGenericName | ❌        |                      |
 | **download_nb**                   | isInt         | ❌        |                      |
-| **unit_price_tax_incl**           | isPrice       | ❌        |                      |
-| **unit_price_tax_excl**           | isPrice       | ❌        |                      |
-| **total_price_tax_incl**          | isPrice       | ❌        |                      |
-| **total_price_tax_excl**          | isPrice       | ❌        |                      |
-| **total_shipping_price_tax_excl** | isPrice       | ❌        |                      |
-| **total_shipping_price_tax_incl** | isPrice       | ❌        |                      |
-| **purchase_supplier_price**       | isPrice       | ❌        |                      |
+| **ecotax_tax_rate**               | isFloat       | ❌        |                      |
+| **ecotax**                        | isFloat       | ❌        |                      |
+| **group_reduction**               | isFloat       | ❌        |                      |
+| **id_customization**              | isUnsignedId  | ❌        | Customization ID     |
+| **id_order_invoice**              | isUnsignedId  | ❌        | Order invoice ID     |
+| **id_order**                      | isUnsignedId  | ✔️       | Order ID             |
+| **id_shop**                       | isUnsignedId  | ✔️       | Shop ID              |
+| **id_tax_rules_group**            | isInt         | ❌        | Tax rules group ID   |
+| **id_warehouse**                  | isUnsignedId  | ✔️       | Warehouse ID         |
 | **original_product_price**        | isPrice       | ❌        |                      |
 | **original_wholesale_price**      | isPrice       | ❌        |                      |
+| **product_attribute_id**          | isUnsignedId  | ❌        | Product attribute ID |
+| **product_ean13**                 | isEan13       | ❌        |                      |
+| **product_id**                    | isUnsignedId  | ❌        | Product ID           |
+| **product_isbn**                  | isIsbn        | ❌        |                      |
+| **product_mpn**                   | isMpn         | ❌        |                      |
+| **product_name**                  | isGenericName | ✔️       |                      |
+| **product_price**                 | isPrice       | ✔️       |                      |
+| **product_quantity_discount**     | isFloat       | ❌        |                      |
+| **product_quantity_in_stock**     | isInt         | ❌        |                      |
+| **product_quantity_refunded**     | isUnsignedInt | ❌        |                      |
+| **product_quantity_reinjected**   | isUnsignedInt | ❌        |                      |
+| **product_quantity_return**       | isUnsignedInt | ❌        |                      |
+| **product_quantity**              | isInt         | ✔️       |                      |
+| **product_reference**             | isReference   | ❌        |                      |
+| **product_supplier_reference**    | isReference   | ❌        |                      |
+| **product_upc**                   | isUpc         | ❌        |                      |
+| **product_weight**                | isFloat       | ❌        |                      |
+| **purchase_supplier_price**       | isPrice       | ❌        |                      |
+| **reduction_amount_tax_excl**     | isPrice       | ❌        |                      |
+| **reduction_amount_tax_incl**     | isPrice       | ❌        |                      |
+| **reduction_amount**              | isPrice       | ❌        |                      |
+| **reduction_percent**             | isFloat       | ❌        |                      |
+| **tax_computation_method**        | isUnsignedId  | ❌        |                      |
+| **total_price_tax_excl**          | isPrice       | ❌        |                      |
+| **total_price_tax_incl**          | isPrice       | ❌        |                      |
 | **total_refunded_tax_excl**       | isPrice       | ❌        |                      |
 | **total_refunded_tax_incl**       | isPrice       | ❌        |                      |
-| **associations**                  |               | ❌        |                      |
+| **total_shipping_price_tax_excl** | isPrice       | ❌        |                      |
+| **total_shipping_price_tax_incl** | isPrice       | ❌        |                      |
+| **unit_price_tax_excl**           | isPrice       | ❌        |                      |
+| **unit_price_tax_incl**           | isPrice       | ❌        |                      |
 
 
 ### Blank schema
@@ -62,53 +62,53 @@ title: Order details
 ```xml
 <prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
   <order_detail>
-    <id><![CDATA[]]></id>
-    <id_order><![CDATA[]]></id_order>
-    <product_id><![CDATA[]]></product_id>
-    <product_attribute_id><![CDATA[]]></product_attribute_id>
-    <product_quantity_reinjected><![CDATA[]]></product_quantity_reinjected>
-    <group_reduction><![CDATA[]]></group_reduction>
     <discount_quantity_applied><![CDATA[]]></discount_quantity_applied>
-    <download_hash><![CDATA[]]></download_hash>
     <download_deadline><![CDATA[]]></download_deadline>
-    <id_order_invoice><![CDATA[]]></id_order_invoice>
-    <id_warehouse><![CDATA[]]></id_warehouse>
-    <id_shop><![CDATA[]]></id_shop>
-    <id_customization><![CDATA[]]></id_customization>
-    <product_name><![CDATA[]]></product_name>
-    <product_quantity><![CDATA[]]></product_quantity>
-    <product_quantity_in_stock><![CDATA[]]></product_quantity_in_stock>
-    <product_quantity_return><![CDATA[]]></product_quantity_return>
-    <product_quantity_refunded><![CDATA[]]></product_quantity_refunded>
-    <product_price><![CDATA[]]></product_price>
-    <reduction_percent><![CDATA[]]></reduction_percent>
-    <reduction_amount><![CDATA[]]></reduction_amount>
-    <reduction_amount_tax_incl><![CDATA[]]></reduction_amount_tax_incl>
-    <reduction_amount_tax_excl><![CDATA[]]></reduction_amount_tax_excl>
-    <product_quantity_discount><![CDATA[]]></product_quantity_discount>
-    <product_ean13><![CDATA[]]></product_ean13>
-    <product_isbn><![CDATA[]]></product_isbn>
-    <product_upc><![CDATA[]]></product_upc>
-    <product_mpn><![CDATA[]]></product_mpn>
-    <product_reference><![CDATA[]]></product_reference>
-    <product_supplier_reference><![CDATA[]]></product_supplier_reference>
-    <product_weight><![CDATA[]]></product_weight>
-    <tax_computation_method><![CDATA[]]></tax_computation_method>
-    <id_tax_rules_group><![CDATA[]]></id_tax_rules_group>
-    <ecotax><![CDATA[]]></ecotax>
-    <ecotax_tax_rate><![CDATA[]]></ecotax_tax_rate>
+    <download_hash><![CDATA[]]></download_hash>
     <download_nb><![CDATA[]]></download_nb>
-    <unit_price_tax_incl><![CDATA[]]></unit_price_tax_incl>
-    <unit_price_tax_excl><![CDATA[]]></unit_price_tax_excl>
-    <total_price_tax_incl><![CDATA[]]></total_price_tax_incl>
-    <total_price_tax_excl><![CDATA[]]></total_price_tax_excl>
-    <total_shipping_price_tax_excl><![CDATA[]]></total_shipping_price_tax_excl>
-    <total_shipping_price_tax_incl><![CDATA[]]></total_shipping_price_tax_incl>
-    <purchase_supplier_price><![CDATA[]]></purchase_supplier_price>
+    <ecotax_tax_rate><![CDATA[]]></ecotax_tax_rate>
+    <ecotax><![CDATA[]]></ecotax>
+    <group_reduction><![CDATA[]]></group_reduction>
+    <id_customization><![CDATA[]]></id_customization>
+    <id_order_invoice><![CDATA[]]></id_order_invoice>
+    <id_order><![CDATA[]]></id_order>
+    <id_shop><![CDATA[]]></id_shop>
+    <id_tax_rules_group><![CDATA[]]></id_tax_rules_group>
+    <id_warehouse><![CDATA[]]></id_warehouse>
+    <id><![CDATA[]]></id>
     <original_product_price><![CDATA[]]></original_product_price>
     <original_wholesale_price><![CDATA[]]></original_wholesale_price>
+    <product_attribute_id><![CDATA[]]></product_attribute_id>
+    <product_ean13><![CDATA[]]></product_ean13>
+    <product_id><![CDATA[]]></product_id>
+    <product_isbn><![CDATA[]]></product_isbn>
+    <product_mpn><![CDATA[]]></product_mpn>
+    <product_name><![CDATA[]]></product_name>
+    <product_price><![CDATA[]]></product_price>
+    <product_quantity_discount><![CDATA[]]></product_quantity_discount>
+    <product_quantity_in_stock><![CDATA[]]></product_quantity_in_stock>
+    <product_quantity_refunded><![CDATA[]]></product_quantity_refunded>
+    <product_quantity_reinjected><![CDATA[]]></product_quantity_reinjected>
+    <product_quantity_return><![CDATA[]]></product_quantity_return>
+    <product_quantity><![CDATA[]]></product_quantity>
+    <product_reference><![CDATA[]]></product_reference>
+    <product_supplier_reference><![CDATA[]]></product_supplier_reference>
+    <product_upc><![CDATA[]]></product_upc>
+    <product_weight><![CDATA[]]></product_weight>
+    <purchase_supplier_price><![CDATA[]]></purchase_supplier_price>
+    <reduction_amount_tax_excl><![CDATA[]]></reduction_amount_tax_excl>
+    <reduction_amount_tax_incl><![CDATA[]]></reduction_amount_tax_incl>
+    <reduction_amount><![CDATA[]]></reduction_amount>
+    <reduction_percent><![CDATA[]]></reduction_percent>
+    <tax_computation_method><![CDATA[]]></tax_computation_method>
+    <total_price_tax_excl><![CDATA[]]></total_price_tax_excl>
+    <total_price_tax_incl><![CDATA[]]></total_price_tax_incl>
     <total_refunded_tax_excl><![CDATA[]]></total_refunded_tax_excl>
     <total_refunded_tax_incl><![CDATA[]]></total_refunded_tax_incl>
+    <total_shipping_price_tax_excl><![CDATA[]]></total_shipping_price_tax_excl>
+    <total_shipping_price_tax_incl><![CDATA[]]></total_shipping_price_tax_incl>
+    <unit_price_tax_excl><![CDATA[]]></unit_price_tax_excl>
+    <unit_price_tax_incl><![CDATA[]]></unit_price_tax_incl>
     <associations>
       <taxes>
         <tax>

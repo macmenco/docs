@@ -8,24 +8,24 @@ title: Supply orders
 
 |            Name            |    Format     | Required | Description  |
 | :------------------------- | :------------ | :------: | :----------- |
-| **id_supplier**            | isUnsignedId  | ✔️       | Supplier ID  |
-| **id_lang**                | isUnsignedId  | ✔️       | Lang ID      |
-| **id_warehouse**           | isUnsignedId  | ✔️       | Warehouse ID |
-| **id_supply_order_state**  | isUnsignedId  | ✔️       |              |
-| **id_currency**            | isUnsignedId  | ✔️       | Currency ID  |
-| **supplier_name**          | isCatalogName | ❌        |              |
-| **reference**              | isGenericName | ✔️       |              |
+| **associations**           |               | ❌        |              |
+| **date_add**               | isDate        | ❌        |              |
 | **date_delivery_expected** | isDate        | ✔️       |              |
-| **total_te**               | isPrice       | ❌        |              |
-| **total_with_discount_te** | isPrice       | ❌        |              |
-| **total_ti**               | isPrice       | ❌        |              |
-| **total_tax**              | isPrice       | ❌        |              |
+| **date_upd**               | isDate        | ❌        |              |
 | **discount_rate**          | isFloat       | ❌        |              |
 | **discount_value_te**      | isPrice       | ❌        |              |
+| **id_currency**            | isUnsignedId  | ✔️       | Currency ID  |
+| **id_lang**                | isUnsignedId  | ✔️       | Lang ID      |
+| **id_supplier**            | isUnsignedId  | ✔️       | Supplier ID  |
+| **id_supply_order_state**  | isUnsignedId  | ✔️       |              |
+| **id_warehouse**           | isUnsignedId  | ✔️       | Warehouse ID |
 | **is_template**            | isBool        | ❌        |              |
-| **date_add**               | isDate        | ❌        |              |
-| **date_upd**               | isDate        | ❌        |              |
-| **associations**           |               | ❌        |              |
+| **reference**              | isGenericName | ✔️       |              |
+| **supplier_name**          | isCatalogName | ❌        |              |
+| **total_tax**              | isPrice       | ❌        |              |
+| **total_te**               | isPrice       | ❌        |              |
+| **total_ti**               | isPrice       | ❌        |              |
+| **total_with_discount_te** | isPrice       | ❌        |              |
 
 
 ### Blank schema
@@ -33,32 +33,32 @@ title: Supply orders
 ```xml
 <prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
   <supply_order>
-    <id><![CDATA[]]></id>
-    <id_supplier><![CDATA[]]></id_supplier>
-    <id_lang><![CDATA[]]></id_lang>
-    <id_warehouse><![CDATA[]]></id_warehouse>
-    <id_supply_order_state><![CDATA[]]></id_supply_order_state>
-    <id_currency><![CDATA[]]></id_currency>
-    <supplier_name><![CDATA[]]></supplier_name>
-    <reference><![CDATA[]]></reference>
+    <date_add><![CDATA[]]></date_add>
     <date_delivery_expected><![CDATA[]]></date_delivery_expected>
-    <total_te><![CDATA[]]></total_te>
-    <total_with_discount_te><![CDATA[]]></total_with_discount_te>
-    <total_ti><![CDATA[]]></total_ti>
-    <total_tax><![CDATA[]]></total_tax>
+    <date_upd><![CDATA[]]></date_upd>
     <discount_rate><![CDATA[]]></discount_rate>
     <discount_value_te><![CDATA[]]></discount_value_te>
+    <id_currency><![CDATA[]]></id_currency>
+    <id_lang><![CDATA[]]></id_lang>
+    <id_supplier><![CDATA[]]></id_supplier>
+    <id_supply_order_state><![CDATA[]]></id_supply_order_state>
+    <id_warehouse><![CDATA[]]></id_warehouse>
+    <id><![CDATA[]]></id>
     <is_template><![CDATA[]]></is_template>
-    <date_add><![CDATA[]]></date_add>
-    <date_upd><![CDATA[]]></date_upd>
+    <reference><![CDATA[]]></reference>
+    <supplier_name><![CDATA[]]></supplier_name>
+    <total_tax><![CDATA[]]></total_tax>
+    <total_te><![CDATA[]]></total_te>
+    <total_ti><![CDATA[]]></total_ti>
+    <total_with_discount_te><![CDATA[]]></total_with_discount_te>
     <associations>
       <supply_order_details>
         <supply_order_detail>
-          <id><![CDATA[]]></id>
-          <id_product><![CDATA[]]></id_product>
           <id_product_attribute><![CDATA[]]></id_product_attribute>
-          <supplier_reference><![CDATA[]]></supplier_reference>
+          <id_product><![CDATA[]]></id_product>
+          <id><![CDATA[]]></id>
           <product_name><![CDATA[]]></product_name>
+          <supplier_reference><![CDATA[]]></supplier_reference>
         </supply_order_detail>
       </supply_order_details>
     </associations>

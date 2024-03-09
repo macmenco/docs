@@ -8,11 +8,11 @@ title: States
 
 |      Name      |     Format     | Required | Max size | Description |
 | :------------- | :------------- | :------: | -------: | :---------- |
-| **id_zone**    | isUnsignedId   | ✔️       |          | Zone ID     |
+| **active**     | isBool         | ❌        |          |             |
 | **id_country** | isUnsignedId   | ✔️       |          | Country ID  |
+| **id_zone**    | isUnsignedId   | ✔️       |          | Zone ID     |
 | **iso_code**   | isStateIsoCode | ✔️       | 7        |             |
 | **name**       | isGenericName  | ✔️       | 32       |             |
-| **active**     | isBool         | ❌        |          |             |
 
 
 ### Blank schema
@@ -20,12 +20,12 @@ title: States
 ```xml
 <prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
   <state>
-    <id><![CDATA[]]></id>
-    <id_zone><![CDATA[]]></id_zone>
+    <active><![CDATA[]]></active>
     <id_country><![CDATA[]]></id_country>
+    <id_zone><![CDATA[]]></id_zone>
+    <id><![CDATA[]]></id>
     <iso_code><![CDATA[]]></iso_code>
     <name><![CDATA[]]></name>
-    <active><![CDATA[]]></active>
   </state>
 </prestashop>
 ```

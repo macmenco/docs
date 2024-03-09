@@ -8,27 +8,27 @@ title: Stock movements
 
 |           Name           |    Format     | Required |     Description      |
 | :----------------------- | :------------ | :------: | :------------------- |
-| **id_product**           |               | ❌        | Product ID           |
-| **id_product_attribute** |               | ❌        | Product attribute ID |
-| **id_warehouse**         |               | ❌        | Warehouse ID         |
-| **id_currency**          |               | ❌        | Currency ID          |
-| **management_type**      |               | ❌        |                      |
-| **id_employee**          | isUnsignedId  | ✔️       | Employee ID          |
-| **id_stock**             | isUnsignedId  | ✔️       |                      |
-| **id_stock_mvt_reason**  | isUnsignedId  | ✔️       |                      |
-| **id_order**             | isUnsignedId  | ❌        | Order ID             |
-| **id_supply_order**      | isUnsignedId  | ❌        |                      |
-| **product_name**         |               | ❌        |                      |
+| **current_wa**           | isPrice       | ❌        |                      |
+| **date_add**             | isDate        | ✔️       |                      |
 | **ean13**                |               | ❌        |                      |
-| **upc**                  |               | ❌        |                      |
-| **reference**            |               | ❌        |                      |
+| **id_currency**          |               | ❌        | Currency ID          |
+| **id_employee**          | isUnsignedId  | ✔️       | Employee ID          |
+| **id_order**             | isUnsignedId  | ❌        | Order ID             |
+| **id_product_attribute** |               | ❌        | Product attribute ID |
+| **id_product**           |               | ❌        | Product ID           |
+| **id_stock_mvt_reason**  | isUnsignedId  | ✔️       |                      |
+| **id_stock**             | isUnsignedId  | ✔️       |                      |
+| **id_supply_order**      | isUnsignedId  | ❌        |                      |
+| **id_warehouse**         |               | ❌        | Warehouse ID         |
+| **last_wa**              | isPrice       | ❌        |                      |
+| **management_type**      |               | ❌        |                      |
 | **mpn**                  |               | ❌        |                      |
 | **physical_quantity**    | isUnsignedInt | ✔️       |                      |
-| **sign**                 | isInt         | ✔️       |                      |
-| **last_wa**              | isPrice       | ❌        |                      |
-| **current_wa**           | isPrice       | ❌        |                      |
 | **price_te**             | isPrice       | ✔️       |                      |
-| **date_add**             | isDate        | ✔️       |                      |
+| **product_name**         |               | ❌        |                      |
+| **reference**            |               | ❌        |                      |
+| **sign**                 | isInt         | ✔️       |                      |
+| **upc**                  |               | ❌        |                      |
 
 
 ### Blank schema
@@ -36,31 +36,31 @@ title: Stock movements
 ```xml
 <prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
   <stock_mvt>
-    <id><![CDATA[]]></id>
-    <id_product><![CDATA[]]></id_product>
-    <id_product_attribute><![CDATA[]]></id_product_attribute>
-    <id_warehouse><![CDATA[]]></id_warehouse>
+    <current_wa><![CDATA[]]></current_wa>
+    <date_add><![CDATA[]]></date_add>
+    <ean13><![CDATA[]]></ean13>
     <id_currency><![CDATA[]]></id_currency>
-    <management_type><![CDATA[]]></management_type>
     <id_employee><![CDATA[]]></id_employee>
-    <id_stock><![CDATA[]]></id_stock>
-    <id_stock_mvt_reason><![CDATA[]]></id_stock_mvt_reason>
     <id_order><![CDATA[]]></id_order>
+    <id_product_attribute><![CDATA[]]></id_product_attribute>
+    <id_product><![CDATA[]]></id_product>
+    <id_stock_mvt_reason><![CDATA[]]></id_stock_mvt_reason>
+    <id_stock><![CDATA[]]></id_stock>
     <id_supply_order><![CDATA[]]></id_supply_order>
+    <id_warehouse><![CDATA[]]></id_warehouse>
+    <id><![CDATA[]]></id>
+    <last_wa><![CDATA[]]></last_wa>
+    <management_type><![CDATA[]]></management_type>
+    <mpn><![CDATA[]]></mpn>
+    <physical_quantity><![CDATA[]]></physical_quantity>
+    <price_te><![CDATA[]]></price_te>
     <product_name>
       <language id="1"><![CDATA[]]></language>
       <language id="2"><![CDATA[]]></language>
     </product_name>
-    <ean13><![CDATA[]]></ean13>
-    <upc><![CDATA[]]></upc>
     <reference><![CDATA[]]></reference>
-    <mpn><![CDATA[]]></mpn>
-    <physical_quantity><![CDATA[]]></physical_quantity>
     <sign><![CDATA[]]></sign>
-    <last_wa><![CDATA[]]></last_wa>
-    <current_wa><![CDATA[]]></current_wa>
-    <price_te><![CDATA[]]></price_te>
-    <date_add><![CDATA[]]></date_add>
+    <upc><![CDATA[]]></upc>
   </stock_mvt>
 </prestashop>
 ```
